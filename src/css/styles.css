@@ -1,0 +1,338 @@
+:root {
+    --primaryColor: #183D3D;
+    --secondaryColor: #040D12;
+    --thirdColor: #3085C3;  
+    --backgroundColor: #80B3FF;  
+    --boxColor:  #7a4d4d;
+    --textColor: #93B1A6;
+}
+
+* {
+    margin: 0;
+}
+#root{
+    height: 100%;
+}
+html,body {
+    height: 100%;
+    margin: 0;
+}
+.question{
+    margin: 20px 20px 14vh 20px;
+    font-size: 45px;
+    color: var(--textColor);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    width: 96%;
+    text-align: center;
+}
+.question div{
+    width: 100%;
+    font-size:2rem;
+    text-decoration:none;
+    letter-spacing:.2rem;
+    color: var(--textColor);
+    background:var(--secondaryColor);
+    border: 4px solid #444;
+    border-radius: 20px;
+    padding:2rem 6rem;
+    border-color: var(--textColor);
+    box-shadow: 0 0 0 var(--textColor);
+    color: var(--textColor);
+}
+.countdown{
+    font-size: 60px;
+}
+.App{
+    width: inherit;
+    height: inherit;
+    background-color: var(--secondaryColor);
+    padding: 0 2.2% 0 2.2%;
+}
+
+.logo{
+    height: 28vh;
+    width: 200px;
+    font: optional;
+    border-radius: 17px;
+}
+.lives{
+    color: var(--textColor);
+    margin: 2rem 0 5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.lives img{
+    height: 34px;
+    margin: 0 6px;
+}
+
+.mainCardDiv{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.coverDiv{
+    background-color: var(--boxColor);
+    display: flex;
+    flex-direction: column;
+}
+.cardsSide{
+    display: flex;
+    background-color: var(--primaryColor);
+    flex-direction: column;
+}
+.cardsHolder{
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70vh;
+    padding: 1.5vh  10px 3.3vh 10px;
+    border-radius: 17px;
+    margin-left: 1.7rem;
+}
+.cardsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    column-gap: 31px;
+    row-gap: 20px;
+}
+.contentSide{
+    top: 1.3rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 70vh;
+    margin: 1.3rem 0 1.3rem 0;
+}
+.statusSide{
+    width: 30%;
+    height: 100%;
+    background-color: var(--primaryColor);
+    border-radius: 17px;
+    padding: 1.5vh 0 3.3vh 0;
+}
+
+.scoreDiv{
+    flex-direction: column;
+    width: 90%;
+    height: 28rem;
+    margin: 1em .7em 1em .7em;
+    padding: .6em .4em;
+    background-color:var(--secondaryColor);
+    border-radius:17px;
+    border:2px solid #122908;
+    margin: 1em .7em 1em .7em;
+    padding: .6em .4em;
+    align-items: center;
+}
+
+.scoreDiv p{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.scoreDiv output{
+    position:relative;
+    font-size: 2.4rem;
+    margin:0 0 .25rem .4rem;
+    bottom: .6rem;
+}
+.footerDiv{
+    align-items: center;
+    background-color: var(--primaryColor);
+    border-radius: 17px 17px 0 0;
+    position:fixed;
+    display: flex;
+    justify-content:center;
+    bottom: 0;
+    left: 2.2%;
+    height: 8vh;
+    width: 95.6%;
+}
+.header{
+    position: relative;
+    top: 1.3rem;
+    background-color: var(--primaryColor);
+    display: flex;
+    margin: 0 0 1.3rem 0;
+    padding: .2rem .4rem;
+    justify-content: center;
+    height: 10vh;
+    border-radius: 17px;
+    padding-bottom: .5vh;
+}
+.title{
+    background-color: var(--thirdColor);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: .25%;
+}
+.result{
+    width: 90%;
+    height: 60vh;
+    margin: 3rem 3rem 3rem 3rem;
+    border: 10px solid var(--secondaryColor);
+    border-radius: 20px;
+}
+.result > p{
+    font-size: 6rem;
+    margin: 2.2rem 0 3rem 0;
+}
+.result > output{
+    background-color: var(--secondaryColor);
+    font-size: 7rem;
+    margin: 2.2rem 0 3rem 0;
+    padding: 0 2rem;
+    color: var(--textColor);
+    border-radius: 20px;
+}
+.rightCard{
+    border: 7px solid #41c43d;
+}
+.wrongCard{
+    border: 7px solid #aa2b35;
+}
+
+.cardText{
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+}
+.gameName{
+    color: rgb(20, 19, 19);
+    font-weight: bold;
+    font-size: 2.8rem;
+    padding: 1.6rem 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.copyright{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.myButton {
+    box-shadow:inset 0px 0px 15px 3px var(--secondaryColor);
+    background-color:var(--secondaryColor);
+    border-radius:17px;
+    border:1px solid #1f2f47;
+    display:inline-block;
+    cursor:pointer;
+    color: var(--textColor);
+    font-family:Arial;
+    font-size:28px;
+    height: 4rem;
+    width: 90%;
+    margin: 1em .7em 1em .7em;
+    padding: .1em .4em;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+    text-align: center;
+}
+.myButton:hover {
+    background-color:#1d2025;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+.quizzDomainClass{
+    width: 84%;
+    height: 66vh;
+    background-color:var(--primaryColor);
+    border-radius:17px;
+    border:5px solid var(--secondaryColor);
+    margin: 1em .7em 1em 1.8em;
+    padding: .6em .4em;
+}
+.chooseDiv{
+    display: flex;
+    color: var(--textColor);
+    border:2px solid #122908;
+    border-radius:10px;
+    background-color: var(--secondaryColor);
+    font-family:Arial;
+    font-size:28px;
+    margin-bottom: 1.4em;
+    padding: 7px;
+    justify-content: center;
+}
+.chooseButton{
+    box-shadow:inset 0px 0px 15px 3px var(--secondaryColor);
+    background-color:var(--secondaryColor);
+    border-radius:17px;
+    border:1px solid var(--secondaryColor);
+    display:inline-block;
+    cursor:pointer;
+    color: var(--textColor);
+    font-family:Arial;
+    font-size:28px;
+    height: 4rem;
+    width: 14rem;
+    margin: .3em .7em .3em .7em;
+    padding: .1em .4em;
+    text-decoration:none;
+    text-shadow:0px 1px 0px var(--secondaryColor);
+    text-align: center;
+}
+.chooseButton:hover {
+    background-color:#1d2025;
+}
+.card{
+    font-size:2rem;
+    text-decoration:none;
+    letter-spacing:.2rem;
+    color: var(--textColor);
+    background:var(--secondaryColor);
+    border: 6px solid #444;
+    border-radius: 20px;
+    padding:2rem 6rem;
+}
+.card.rightCard {
+    border-color: #00ff00;
+    box-shadow: 0 0 0 #00ff00;
+    animation: box 1.3s 1;
+}
+.card.wrongCard {
+    border-color: #c03c1b;
+    box-shadow: 0 0 0 #c03c1b;
+    animation: box 1.3s 1;
+}
+@keyframes box{
+    0%{
+        box-shadow: #27272c;
+    }
+    50%{
+        box-shadow: 0 0 27px;
+    }
+    100%{
+        box-shadow: #27272c;
+    }
+}
+@keyframes neon-border {
+    from {
+        opacity: 1;
+        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    }
+    to {
+        opacity: 0.5;
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+}
+@media (min-height: 680px) {
+    .pageBody{
+        background-attachment: fixed;
+    }
+}
